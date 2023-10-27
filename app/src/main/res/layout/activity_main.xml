@@ -13,7 +13,6 @@
 
 
     <EditText
-
         android:id="@+id/t1"
         android:layout_width="367dp"
         android:layout_height="wrap_content"
@@ -47,15 +46,14 @@
         android:drawablePadding="10dp"
         android:drawableTint="#000000"
         android:hint="Enter second digit"
+        android:inputType="number"
+        android:maxLength="5"
         android:paddingEnd="40dp"
         android:textAlignment="textEnd"
         android:textColorHint="#03AAC1"
         android:textSize="30dp"
         android:textStyle="bold"
-        android:inputType="number"
-        android:maxLength="5"
-        />
-
+        tools:ignore="VisualLintTextFieldSize" />
 
     <Button
         android:id="@+id/result"
@@ -66,13 +64,8 @@
         android:layout_marginTop="20dp"
         android:onClick="process"
         android:text="Get Sum"
-        android:textSize="20dp" />
-
-
-
-
-
-
+        android:textSize="20dp"
+        tools:ignore="TextSizeCheck,VisualLintButtonSize" />
 
 
 </LinearLayout>
